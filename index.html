@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="hesostudios: photographs by Cisco on 35mm color film. New York, Washington, D.C., Chicago and Evanston.">
+<meta property="og:title" content="hesostudios">
+<meta property="og:image" content="EX-07-LAKEFRONT/chi-16.jpg">
+<title>hesostudios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
+<style>
+:root{
+  --wall:#fcfcfb;
+  --ink:#171716;
+  --muted:#76736e;
+  --rule:#e4e3df;
+  --hover:#f1f0ed;
+  --sans:"Hanken Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --s-xs:12px; --s-sm:14px; --s-md:17px; --s-lg:clamp(26px,3.6vw,44px);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--wall);color:var(--ink);font-family:var(--sans);font-size:var(--s-sm);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+.wrap{max-width:1360px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:760px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+
+/* Header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--wall)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--wall)}
+header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding-block:22px}
+.mark{font-weight:600;font-size:var(--s-md);letter-spacing:-.01em}
+.mark span{font-weight:400;color:var(--muted)}
+nav{display:flex;gap:22px;font-size:var(--s-sm)}
+nav a{color:var(--muted);transition:color .15s}
+nav a:hover,nav a[aria-current="page"]{color:var(--ink)}
+
+main{padding-bottom:120px}
+.eyebrow{font-size:var(--s-xs);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1,h2{font-weight:500;letter-spacing:-.02em;line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:var(--s-lg)}
+h2{font-size:22px}
+.meta{color:var(--muted)}
+em,.title{font-family:var(--serif);font-style:italic;font-weight:400}
+
+/* Home */
+.hero{display:grid;gap:28px;padding-top:24px}
+.hero figure{margin:0;background:var(--hover)}
+.hero img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.hero-text{display:grid;gap:10px;max-width:640px}
+.cta{display:inline-block;margin-top:8px;border-bottom:1px solid var(--ink);padding-bottom:2px;justify-self:start}
+@media(min-width:900px){
+  .hero{grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);align-items:end;gap:48px}
+}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;margin-top:110px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.shows{list-style:none;margin:0;padding:0}
+.shows li{border-bottom:1px solid var(--rule)}
+.shows a{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:center;padding-block:18px;transition:background .15s}
+.shows a:hover{background:var(--hover)}
+.shows img{width:96px;aspect-ratio:3/2;object-fit:cover;display:block}
+.shows .row{display:grid;gap:2px;min-width:0}
+.shows .t{font-size:var(--s-md);font-weight:500}
+@media(min-width:760px){
+  .shows a{grid-template-columns:150px minmax(0,1.3fr) minmax(0,1fr) minmax(0,.8fr) 80px;gap:32px}
+  .shows img{width:150px}
+  .shows .row{display:contents}
+  .shows .count{text-align:right}
+}
+
+/* Exhibition */
+.show-head{display:grid;gap:14px;padding-top:56px;padding-bottom:40px;max-width:760px}
+.statement{font-size:var(--s-md);line-height:1.6;max-width:62ch;margin:10px 0 0}
+.show-meta{display:flex;flex-wrap:wrap;gap:6px 28px;padding-block:14px;border-block:1px solid var(--rule);margin-bottom:40px}
+.walls{display:grid;gap:clamp(72px,12vw,160px);padding-top:40px}
+.work{margin:0;display:grid;gap:16px;justify-items:center}
+.work button{all:unset;cursor:zoom-in;display:block;max-width:100%}
+.work img{display:block;max-width:100%;max-height:82vh;width:auto;height:auto;background:var(--hover);box-shadow:0 1px 2px rgba(23,23,22,.08)}
+.label{justify-self:center;width:min(100%,520px);display:grid;grid-template-columns:auto 1fr;gap:2px 18px;font-size:var(--s-xs);color:var(--muted);line-height:1.55}
+.label .no{font-variant-numeric:tabular-nums;color:var(--ink)}
+.label .title{font-size:15px;color:var(--ink)}
+.subbar .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:10px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:var(--s-sm)}
+.subbar #sb-title{font-weight:500;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.subbar #sb-title span{font-weight:400;color:var(--muted)}
+.subbar #sb-count{font-variant-numeric:tabular-nums;flex:none}
+.end{margin-top:clamp(96px,14vw,180px);display:grid;gap:8px;justify-items:center;text-align:center}
+.next{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;gap:20px}
+
+/* Works index */
+.index{columns:2 160px;column-gap:20px;padding-top:32px}
+@media(min-width:760px){.index{columns:4 220px;column-gap:28px}}
+.index a{display:block;break-inside:avoid;margin-bottom:28px}
+.index img{display:block;width:100%;height:auto;background:var(--hover);transition:opacity .2s}
+.index a:hover img{opacity:.85}
+.index .cap{display:flex;gap:10px;margin-top:8px;font-size:var(--s-xs);color:var(--muted)}
+.index .cap .title{color:var(--ink);font-size:14px}
+
+/* Info */
+.info{display:grid;gap:48px;padding-top:56px}
+.info p{font-size:var(--s-md);line-height:1.6;max-width:58ch;margin:0 0 1em}
+.facts{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px 20px;align-content:start}
+.facts dt{color:var(--muted)} .facts dd{margin:0}
+.facts a{border-bottom:1px solid var(--rule)}
+@media(min-width:900px){.info{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:80px}}
+
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:28px;border-top:1px solid var(--rule);color:var(--muted);font-size:var(--s-xs)}
+
+/* Viewer */
+.viewer{position:fixed;inset:0;z-index:20;background:var(--wall);display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+  padding:calc(env(safe-area-inset-top,0px) + 14px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 18px) max(16px,env(safe-area-inset-left,0px))}
+.viewer .bar{display:flex;justify-content:space-between;align-items:center;font-size:var(--s-xs);color:var(--muted)}
+.viewer button{all:unset;cursor:pointer;padding:8px 4px;color:var(--ink);font-size:var(--s-sm)}
+.viewer .stage{display:grid;place-items:center;min-height:0;padding-block:12px}
+.viewer .stage img{max-width:100%;max-height:100%;object-fit:contain}
+.viewer .foot{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.viewer .foot .title{font-size:15px}
+@media(prefers-reduced-motion:no-preference){
+  .view{animation:in .45s ease both}
+  @keyframes in{from{opacity:.0001}to{opacity:1}}
+}
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#">hesostudios</a>
+    <nav aria-label="Main">
+      <a href="#exhibitions" data-nav="exhibitions">Exhibitions</a>
+      <a href="#works" data-nav="works">Works</a>
+      <a href="#info" data-nav="info">Info</a>
+    </nav>
+  </div>
+  <div class="subbar" id="subbar" hidden><div class="wrap"><a href="#" id="sb-title"></a><span id="sb-count" class="meta"></span></div></div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer><div class="wrap"><span>hesostudios · 35mm color film</span><a href="https://www.instagram.com/hesocio/">Instagram @hesocio</a></div></footer>
+
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="Work viewer">
+  <div class="bar"><span id="v-count"></span><button id="v-close" type="button">Close</button></div>
+  <div class="stage"><img id="v-img" alt=""></div>
+  <div class="foot">
+    <button id="v-prev" type="button">Previous</button>
+    <div id="v-cap" style="text-align:center"></div>
+    <button id="v-next" type="button">Next</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener("error",e=>{const i=e.target;if(i.tagName==="IMG"&&i.getAttribute("src")&&!i.dataset.tried){i.dataset.tried="1";i.src=i.getAttribute("src").split("/").pop();}},true);
+const SHOWS=[
+ {id:"lakefront",dir:"EX-07-LAKEFRONT",title:"Lakefront",place:"Chicago",dates:"Fall 2026",
+  text:"A day trip into the city with friends. Cloud Gate at dusk and from underneath, the river from the bridges, then a clear afternoon on the rocks along Lake Michigan with the skyline small on the horizon.",
+  works:[["chi-16","Cloud Gate at Dusk"],["chi-17","Last Light, Randolph Street"],["chi-18","Flash on Steel"],["chi-19","Under the Bean"],["chi-21","Arms Up"],["chi-26","Looking Up"],["chi-27","Reflection"],["chi-09","Stairwell"],["chi-13","Riverwalk"],["chi-29","Two in a Stairwell"],["chi-02","Neon Window"],["chi-30","Skyline from the Beach"],["chi-31","Watching the Water"],["chi-35","Breakwater"],["chi-34","Breakwater, Later"]]},
+ {id:"first-weeks",dir:"EX-06-FIRSTWEEKS",title:"First Weeks",place:"Evanston",dates:"Fall 2026",
+  text:"The first weeks of the school year. A parrot in a café, a tandem bike outside, a trio playing in the afternoon sun, and a concert night at Welsh-Ryan Arena.",
+  works:[["ev-03","Elm"],["ev-32","Parrot"],["ev-34","Tandem"],["ev-36","Trio in Sunlight"],["ev-11","DJ Booth"],["ev-12","Barricade"],["ev-13","Phones Up"],["ev-17","House Lights"],["ev-20","Hallway"],["ev-21","Hallway, Later"],["ev-30","Empty Arena"]]},
+ {id:"rooftop",dir:"EX-05-ROOFTOPSUMMER",title:"Rooftop Summer",place:"Brooklyn",dates:"August 2026",
+  text:"Late nights with friends. Car rides with the shutter left open, a rooftop after midnight, a card game, and the M train coming into the station in the evening, with the Williamsburg Bridge behind it.",
+  works:[["bk-02","Sunset"],["bk-03","Passenger"],["bk-05","Driver"],["bk-06","Light Study I"],["bk-08","Light Study II"],["bk-10","Rooftop"],["bk-14","Rooftop, After Midnight"],["bk-20","Lying Down"],["bk-15","Red House"],["bk-21","Subway Car"],["bk-25","Ribbon Dance"],["bk-32","Card Game"],["bk-33","M Train"],["bk-36","Bridge from the Platform"]]},
+ {id:"after-hours",dir:"EX-04-AFTERHOURS",title:"After Hours",place:"Downtown Manhattan",dates:"July – August 2026",
+  text:"Bookstores that stay open past midnight, a clothes rack on the sidewalk, friends checking their phones under a streetlight.",
+  works:[["6275-18","Walking Home"],["6275-13","Bookstore, Late"],["6275-14","Stacks"],["6275-15","Two Readers"],["6275-16","Typewriter with Stars"],["6275-17","Poster Wall"],["6275-12","Sidewalk Rack"],["6275-19","Corner, Eleven O'Clock"],["6275-20","Text Message"],["6275-11","Grate"]]},
+ {id:"rooms",dir:"EX-03-ROOMSATTHEMET",title:"Rooms at the Met",place:"The Metropolitan Museum of Art",dates:"June 2026",
+  text:"An afternoon inside the museum, looking at the people as much as the work: the Temple of Dendur in flat skylight, the sculpture court from the balcony, a friend reading the map.",
+  works:[["9689-16","Temple of Dendur"],["9689-13","Two Seated Figures"],["9689-21","Sculpture Court"],["9689-22","From the Balcony"],["9689-17","Glass Roof"],["9689-23","Reading the Map"],["9689-30","Elephant Ears"]]},
+ {id:"street-level",dir:"EX-02-STREETLEVEL",title:"Street Level",place:"New York",dates:"June – August 2026",
+  text:"Midtown at eye level. A string duet on a subway platform, a lunchtime ping-pong game, a crosswalk at the change of the light.",
+  works:[["6275-10","Duet, Subway Platform"],["6275-22","Ping-Pong, Midtown"],["6275-27","Crosswalk"],["6275-25","Yellow Cab"],["6275-08","Heating Oil"],["9689-34","Skyline from a Roof"],["9689-36","Hammock"],["9689-06","Platform, Red Signal"]]},
+ {id:"capital",dir:"EX-01-CAPITAL",title:"Capital",place:"Washington, D.C.",dates:"June 2026",
+  text:"Limestone, columns and flags. Union Station and the federal buildings around the Mall, photographed straight on in hard summer light.",
+  works:[["9689-01","Arcade, Union Station"],["9689-02","Union Station"],["6275-33","Treasury"],["6275-32","Executive Office Building"],["6275-34","Colonnade"],["6275-05","Portico with Banners"],["6275-35","Pennsylvania Avenue"]]}
+];
+let n=0;const ALL=[];
+SHOWS.forEach(s=>{s.items=s.works.map(([f,t])=>{n++;const w={file:s.dir+"/"+f,title:t,show:s,no:"HS 26."+String(n).padStart(2,"0")};ALL.push(w);return w;});});
+const src=f=>f+".jpg";
+const app=document.getElementById("app");
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function label(w){return `<div class="label"><span class="no">${w.no}</span><span><span class="title">${esc(w.title)}</span>, 2026</span><span></span><span>35mm color negative film</span><span></span><span>${esc(w.show.place)}</span></div>`}
+
+function home(){
+  const s=SHOWS[0];
+  return `<div class="view">
+  <section class="hero">
+    <figure><a href="#${s.id}"><img src="${src(s.items[0].file)}" alt="${esc(s.items[0].title)}"></a></figure>
+    <div class="hero-text">
+      <span class="eyebrow">Current exhibition</span>
+      <h1>${esc(s.title)}</h1>
+      <span class="meta">${esc(s.place)} · ${esc(s.dates)}</span>
+      <a class="cta" href="#${s.id}">View exhibition</a>
+    </div>
+  </section>
+  ${showList("Exhibitions")}
+  </div>`;
+}
+function showList(head){
+  return `<div class="section-head"><h2>${head}</h2><span class="meta">${SHOWS.length} exhibitions</span></div>
+  <ul class="shows">${SHOWS.map(s=>`<li><a href="#${s.id}"><img src="${src(s.items[0].file)}" alt="" loading="lazy">
+    <span class="row"><span class="t">${esc(s.title)}</span><span class="meta">${esc(s.place)}</span><span class="meta">${esc(s.dates)}</span></span>
+    <span class="meta count">${s.items.length} works</span></a></li>`).join("")}</ul>`;
+}
+function show(s){
+  const i=SHOWS.indexOf(s),nx=SHOWS[(i+1)%SHOWS.length];
+  return `<div class="view">
+  <section class="show-head">
+    <span class="eyebrow">Exhibition</span>
+    <h1>${esc(s.title)}</h1>
+    <p class="statement">${esc(s.text)}</p>
+  </section>
+  <div class="show-meta meta"><span>${esc(s.place)}</span><span>${esc(s.dates)}</span><span>${s.items.length} works</span></div>
+  <div class="walls">${s.items.map(w=>`<figure class="work"><button type="button" data-open="${ALL.indexOf(w)}" aria-label="View ${esc(w.title)} larger"><img src="${src(w.file)}" alt="${esc(w.title)}" loading="lazy"></button>${label(w)}</figure>`).join("")}</div>
+  <div class="end"><span class="eyebrow">End of exhibition</span><h2>${esc(s.title)}</h2><span class="meta">${esc(s.place)} · ${esc(s.dates)} · ${s.items.length} works</span></div>
+  <div class="next"><a href="#exhibitions" class="meta">All exhibitions</a><a href="#${nx.id}">Next: ${esc(nx.title)}</a></div>
+  </div>`;
+}
+function works(){
+  return `<div class="view"><section class="show-head" style="padding-bottom:0"><span class="eyebrow">Works</span><h1>All works, 2026</h1></section>
+  <div class="index">${ALL.map((w,i)=>`<a href="#works" data-open="${i}"><img src="${src(w.file)}" alt="${esc(w.title)}" loading="lazy"><span class="cap"><span>${w.no.slice(3)}</span><span class="title">${esc(w.title)}</span></span></a>`).join("")}</div></div>`;
+}
+function info(){
+  return `<div class="view"><section class="info">
+   <div>
+    <span class="eyebrow">Info</span>
+    <h1 style="margin:14px 0 28px">About</h1>
+    <p>Cisco is a photographer from California who studied at Andover and is now at Northwestern. He shoots on 35mm color film.</p>
+    <p>This work was made in 2026: a summer of weekends in New York and Washington, D.C., then a first fall in Evanston and Chicago. Many of those New York weekends ended at the independent galleries in Chelsea, which gave me this idea to start my own.</p>
+   </div>
+   <dl class="facts">
+    <dt>Based in</dt><dd>San Diego, CA; Evanston, IL; New York, NY; Washington, D.C.</dd>
+    <dt>Medium</dt><dd>35mm color negative film</dd>
+    <dt>Instagram</dt><dd><a href="https://www.instagram.com/hesocio/">@hesocio</a></dd>
+    <dt>Inquiries</dt><dd>Message on Instagram</dd>
+   </dl>
+  </section></div>`;
+}
+
+const SB=document.getElementById("subbar");let obs=[];
+function unwatch(){obs.forEach(o=>o.disconnect());obs=[];SB.hidden=true;}
+function watch(s){
+  const t=document.getElementById("sb-title"),c=document.getElementById("sb-count");
+  t.innerHTML=`${esc(s.title)} <span>· ${esc(s.place)}</span>`;t.href="#"+s.id;
+  const total=s.items.length;c.textContent=`1 / ${total}`;
+  const head=app.querySelector(".show-head"),end=app.querySelector(".end");
+  let headIn=true,endIn=false;const sync=()=>{SB.hidden=headIn||endIn;};
+  const o1=new IntersectionObserver(es=>es.forEach(e=>{if(e.target===head)headIn=e.isIntersecting;if(e.target===end)endIn=e.isIntersecting;sync();}));
+  o1.observe(head);o1.observe(end);
+  const figs=[...app.querySelectorAll(".work")];
+  const o2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)c.textContent=`${figs.indexOf(e.target)+1} / ${total}`;}),{rootMargin:"-45% 0px -45% 0px"});
+  figs.forEach(f=>o2.observe(f));obs=[o1,o2];
+}
+
+function route(){
+  unwatch();
+  const h=location.hash.replace("#","");
+  const s=SHOWS.find(x=>x.id===h);
+  let key="";
+  if(s){app.innerHTML=show(s);watch(s);}
+  else if(h==="exhibitions"){app.innerHTML=`<div class="view" style="padding-top:24px">${showList("Exhibitions")}</div>`;app.firstElementChild.firstElementChild.style.marginTop="32px";key="exhibitions";}
+  else if(h==="works"){if(!app.querySelector(".index"))app.innerHTML=works();key="works";}
+  else if(h==="info"){app.innerHTML=info();key="info";}
+  else app.innerHTML=home();
+  if(s)key="exhibitions";
+  document.querySelectorAll("[data-nav]").forEach(a=>{if(a.dataset.nav===key)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
+  if(!(h==="works"&&viewerOpen))window.scrollTo(0,0);
+}
+
+// Viewer
+const V=document.getElementById("viewer"),vi=document.getElementById("v-img");
+let cur=0,list=ALL,viewerOpen=false;
+function openV(i){
+  const w=ALL[i];list=location.hash.slice(1)==="works"?ALL:w.show.items;cur=list.indexOf(w);
+  viewerOpen=true;V.hidden=false;document.body.style.overflow="hidden";paint();document.getElementById("v-close").focus();
+}
+function paint(){const w=list[cur];vi.src=src(w.file);vi.alt=w.title;
+  document.getElementById("v-count").textContent=`${cur+1} / ${list.length} · ${w.show.title}`;
+  document.getElementById("v-cap").innerHTML=`<span class="title">${esc(w.title)}</span>, 2026 <span class="meta">· ${w.no}</span>`;}
+function closeV(){V.hidden=true;viewerOpen=false;document.body.style.overflow="";}
+function step(d){cur=(cur+d+list.length)%list.length;paint();}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-open]");if(t){e.preventDefault();openV(+t.dataset.open);}});
+document.getElementById("v-close").onclick=closeV;
+document.getElementById("v-prev").onclick=()=>step(-1);
+document.getElementById("v-next").onclick=()=>step(1);
+document.addEventListener("keydown",e=>{if(V.hidden)return;if(e.key==="Escape")closeV();if(e.key==="ArrowRight")step(1);if(e.key==="ArrowLeft")step(-1);});
+let tx=null;V.addEventListener("touchstart",e=>tx=e.touches[0].clientX,{passive:true});
+V.addEventListener("touchend",e=>{if(tx==null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)step(dx<0?1:-1);tx=null;});
+
+window.addEventListener("hashchange",()=>{closeV();route();});
+route();
+</script>
+
+</body>
+</html>
