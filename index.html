@@ -176,7 +176,7 @@ const SHOWS=[
   works:[["6275-10","Duet, Subway Platform"],["6275-22","Ping-Pong, Midtown"],["6275-27","Crosswalk"],["6275-25","Yellow Cab"],["6275-08","Heating Oil"],["9689-34","Skyline from a Roof"],["9689-36","Hammock"],["9689-06","Platform, Red Signal"]]},
  {id:"capital",dir:"EX-01-CAPITAL",title:"Capital",place:"Washington, D.C.",dates:"June 2026",
   text:"Limestone, columns and flags. Union Station and the federal buildings around the Mall, photographed straight on in hard summer light.",
-  works:[["9689-01","Arcade, Union Station"],["9689-02","Union Station"],["6275-33","Treasury"],["6275-32","Executive Office Building"],["6275-34","Colonnade"],["6275-05","Portico with Banners"],["6275-35","Pennsylvania Avenue"]]}
+  works:[["9689-01","Arcade, Union Station"],["dc-01","Lafayette Square"],["dc-02","Monument Grounds"],["dc-03","Skybridge"],["dc-04","Motorcade"],["6275-32","Executive Office Building"],["dc-05","Metro, Going Down"],["dc-06","Capitol, Noon"],["dc-07","Ears"],["6275-33","Treasury"],["dc-08","White Squirrel"],["dc-09","After the Rain"],["dc-10","White Squirrel, Standing"],["dc-11","Capitol at Dusk"],["6275-05","Portico with Banners"]]}
 ];
 let n=0;const ALL=[];
 SHOWS.forEach(s=>{s.items=s.works.map(([f,t])=>{n++;const w={file:s.dir+"/"+f,title:t,show:s,no:"HS 26."+String(n).padStart(2,"0")};ALL.push(w);return w;});});
